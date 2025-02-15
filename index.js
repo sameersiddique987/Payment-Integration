@@ -12,7 +12,7 @@ app.use(express.json());
 
 // ✅ Proper CORS Configuration
 const allowedOrigins = [
-  'https://react-ecommerce-app-hj3b.vercel.app', 
+  'https://vercel.com/sameer-siddiques-projects/react-ecommerce-app-conj', 
   'https://payment-integration-blond.vercel.app'
 ];
 
