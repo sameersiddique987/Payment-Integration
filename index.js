@@ -10,10 +10,10 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// ✅ Proper CORS Configuration
+// ✅ Allowed Frontend URLs (React App ka Sahi URL likho)
 const allowedOrigins = [
-  'https://vercel.com/sameer-siddiques-projects/react-ecommerce-app-conj', 
-  'https://payment-integration-blond.vercel.app'
+  'https://react-ecommerce-app-emlm.vercel.app',  // ✅ Sahi Frontend URL
+  'http://localhost:5173' // ✅ Local Testing ke liye
 ];
 
 app.use(cors({
