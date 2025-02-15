@@ -10,10 +10,10 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// ✅ Allowed Frontend URLs (React App ka Sahi URL likho)
+
 const allowedOrigins = [
-  'https://react-ecommerce-app-emlm.vercel.app',  // ✅ Sahi Frontend URL
-  'http://localhost:5173' // ✅ Local Testing ke liye
+  'https://react-ecommerce-app-emlm.vercel.app', 
+  'http://localhost:5173' 
 ];
 
 app.use(cors({
@@ -29,7 +29,7 @@ app.use(cors({
   credentials: true
 }));
 
-// ✅ Manually Handle Preflight Requests (For Vercel)
+
 app.options('*', (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
