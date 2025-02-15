@@ -28,8 +28,8 @@ const checkout = async (req, res) => {
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: "https://react-ecommerce-app-emlm.vercel.app/success",
-      cancel_url: "https://react-ecommerce-app-emlm.vercel.app/cancel",
+      success_url: "https://react-ecommerce-app-kgqi.vercel.app/success",
+      cancel_url: "https://react-ecommerce-app-kgqi.vercel.app/cancel",
     });
 
     res.json({ message: "Session created", id: session.id });

@@ -12,7 +12,7 @@ app.use(express.json());
 
 
 const allowedOrigins = [
-  'https://react-ecommerce-app-emlm.vercel.app', 
+  'https://react-ecommerce-app-kgqi.vercel.app', 
   'http://localhost:5173' 
 ];
 
